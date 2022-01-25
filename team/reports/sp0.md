@@ -30,6 +30,13 @@ We plan to complete all of the epics listed, below.
 These epics will set the backbone of the project, and define the component hierarchy of the website.
 As such, these epics are important to complete ASAP.
 
+#### [Team Info](https://github.com/ondryice/wildfire-safety/issues/13)
+Team members will upload information to the website, including:
+- contact info
+- availability
+- a short bio
+- a profile picture
+
 #### [Initial Setup](https://github.com/ondryice/wildfire-safety/issues/1)
 This epic involves the invitations of team members, README documentation, creation of reports, etc.
 The tasks associated with this epic are strictly organizational.

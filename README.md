@@ -26,6 +26,12 @@ In general, the estimate should *roughly* correspond to the number of hours expe
 An estimate of `1` indicates a very simple, and quick, task.
 An estimate of `2` indicates a simple task, but it may take longer to complete.
 An estimate of `3` or `4` indicates a complicated task that may take a long time to complete.
+Typically, estimates over `4` indicate the task is bloated, and should be divided into smaller chunks.
+
+### Pull Requests
+**Any** changes to the repository *must* be done through Pull Requests.
+Developers should *never* commit directly to the **main** branch, and should never merge their own pull request.
+Developers should assign another team member to review the pull request and merge it, so long as merge conflicts are resolved and the changes do not break **main**.
 
 # Development
 This website is developed with ReactJS, a "flavor" of javascript.
@@ -34,7 +40,12 @@ The workflow is a flavor of agile development, through the use of ZenHub, a popu
 ## Resources for Development
 Developers can refer to the following resources when making changes to the repository.
 
-### [GitHub Flavored Markdown (GFM)]()
+### GitHub
+GitHub is a source control tool particularly useful when developing as a team.
+Source control refers to managing conflicts when multiple people or groups of people are editing the same files.
+Please view the [GitHub Quick Start](https://docs.github.com/en/get-started/quickstart/hello-world) page for information on Repositories, Branches, Commits, and Pull Requests.
+
+#### [GitHub Flavored Markdown (GFM)]()
 See the [GitHub docs](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) or the [GFM specs](https://github.github.com/gfm/) for tips on writing markdown files specific to GFM.
 We use GFM for all our Markdown (extension `.md`) files.
 

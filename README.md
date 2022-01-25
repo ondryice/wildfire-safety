@@ -3,7 +3,7 @@ This project's goal is to develop a website that provides information on wildfir
 
 ## The Dev Team
 | Name | Git username | Email |
-| --- | --- | --- |
+| ---- | ------------ | ----- |
 | Andréas J. | `ondryice` or `0ndryice` | ondryice2357@gmail.com |
 
 # Development
@@ -11,11 +11,18 @@ This website is developed with ReactJS, a "flavor" of javascript.
 The workflow is a flavor of agile development, through the use of ZenHub, a popular extension for GitHub.
 
 ## Resources for Development
+Developers can refer to the following resources when making changes to the repository.
 
-### GitHub Flavored Markdown (GFM)
 See the [GitHub docs](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for GFM.
+### [GitHub Flavored Markdown (GFM)]()
+See the [GitHub docs](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) or the [GFM specs](https://github.github.com/gfm/) for tips on writing markdown files specific to GFM.
 We use GFM for all our Markdown (extension `.md`) files.
 
-### ReactJS
+### [ReactJS](https://reactjs.org/)
+The following links lead to official resources on developing with ReactJS:
+- [Getting Started](https://reactjs.org/docs/getting-started.html): creating a new React app.
+- [Intro to React](https://reactjs.org/tutorial/tutorial.html): what *is* React?
+- [Components & Props](https://reactjs.org/docs/components-and-props.html): we are developing this website using exclusively React components, so this is an essential piece of knowledge.
+- [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
 
 ### ZenHub

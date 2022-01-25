@@ -12,7 +12,7 @@ export class Navbar extends React.Component {
     render() {
         return (
             <div className='navbar'>
-                
+                <p>TODO: navbar content</p>
             </div>
         );
     }

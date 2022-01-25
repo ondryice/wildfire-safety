@@ -9,6 +9,7 @@ const bios = {
     andreas_j: {
         'name'      :   'Andréas Johnson',
         'pronouns'  :   'He/Him/His',
+        'role'      :   'Project Manager',
         'contact'   :   {
             'method':   'email',
             'at'    :   'andreas.johnson@rams.colostate.edu'
@@ -25,6 +26,7 @@ const bios = {
     tor_j: {
         'name'      :   'Tor Johnson',
         'pronouns'  :   null,
+        'role'      :   null,
         'contact'   :   null,
         'img'       :   null,
         'fav-quote' :   null,
@@ -33,6 +35,7 @@ const bios = {
     ullacarin_j: {
         'name'      :   'Ulla-Carin Johnson',
         'pronouns'  :   null,
+        'role'      :   null,
         'contact'   :   null,
         'img'       :   null,
         'fav-quote' :   null,
@@ -41,6 +44,7 @@ const bios = {
     karl_j: {
         'name'      :   'Karl Johnson',
         'pronouns'  :   null,
+        'role'      :   null,
         'contact'   :   null,
         'img'       :   null,
         'fav-quote' :   null,

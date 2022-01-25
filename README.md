@@ -19,13 +19,14 @@ See the [GitHub docs](https://docs.github.com/en/github/writing-on-github/gettin
 We use GFM for all our Markdown (extension `.md`) files.
 
 ### [ReactJS](https://reactjs.org/)
-The following links lead to official resources on developing with ReactJS:
-- [Getting Started](https://reactjs.org/docs/getting-started.html): creating a new React app.
+- [Getting Started](https://reactjs.org/docs/getting-started.html): creating a new React app
 - [Intro to React](https://reactjs.org/tutorial/tutorial.html): what *is* React?
-- [Components & Props](https://reactjs.org/docs/components-and-props.html): we are developing this website using exclusively React components, so this is an essential piece of knowledge.
+- [Components & Props](https://reactjs.org/docs/components-and-props.html): we are developing this website using exclusively React components, so this is an essential piece of knowledge
 - [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
 
 ### [ZenHub](https://www.zenhub.com/)
-- [Browser Extension](https://www.zenhub.com/extension).
+- [Browser Extension](https://www.zenhub.com/extension)
 - [What is ZenHub?](https://help.zenhub.com/support/solutions/articles/43000010778-what-is-zenhub-an-intro-to-zenhub-in-github)
-- [Boards](https://www.zenhub.com/boards): ZenHub boards for agile development.
+- [Boards](https://www.zenhub.com/boards): ZenHub boards for agile development
+- [Agile Development: Best Practices](https://blog.zenhub.com/)
+- [Additional Resources](https://www.zenhub.com/resources)

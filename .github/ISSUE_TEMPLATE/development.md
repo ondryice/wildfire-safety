@@ -1,6 +1,6 @@
 ---
 name: Development
-about: A task being handled by the dev team
+about: A task to be handled by the dev team
 title: "[Dev] "
 labels: ''
 assignees: ''
@@ -11,9 +11,5 @@ assignees: ''
 > Task description here.
 
 ## Progress
-- [ ] Subtask
-- [ ] Subtask
-
-## Changes, Forks, and Notes
-- dd.mm.yy weekday | change, new issue no. and link, or note on progress
-- dd.mm.yy weekday | change, new issue no. and link, or note on progress
+- [ ] subtask here
+- [ ] subtask here

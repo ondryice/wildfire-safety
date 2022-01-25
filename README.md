@@ -25,4 +25,7 @@ The following links lead to official resources on developing with ReactJS:
 - [Components & Props](https://reactjs.org/docs/components-and-props.html): we are developing this website using exclusively React components, so this is an essential piece of knowledge.
 - [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
 
-### ZenHub
+### [ZenHub](https://www.zenhub.com/)
+- [Browser Extension](https://www.zenhub.com/extension).
+- [What is ZenHub?](https://help.zenhub.com/support/solutions/articles/43000010778-what-is-zenhub-an-intro-to-zenhub-in-github)
+- [Boards](https://www.zenhub.com/boards): ZenHub boards for agile development.

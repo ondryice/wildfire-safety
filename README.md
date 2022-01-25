@@ -13,7 +13,7 @@ The workflow is a flavor of agile development, through the use of ZenHub, a popu
 ## Resources for Development
 
 ### GitHub Flavored Markdown (GFM)
-See the GitHub docs for GFM.
+See the [GitHub docs](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for GFM.
 We use GFM for all our Markdown (extension `.md`) files.
 
 ### ReactJS

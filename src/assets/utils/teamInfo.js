@@ -1,10 +1,5 @@
 import profile_andreasJohnson from '../static/images/team/profile_andreasJohnson.jpg';
 
-const pronouns = {
-    male: 'He/Him/His',
-    female: 'She/Her/Her'
-};
-
 const bios = {
     andreas_j: {
         'name'      :   'Andréas Johnson',

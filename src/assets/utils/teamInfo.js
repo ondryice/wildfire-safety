@@ -1,8 +1,18 @@
 import profile_andreasJohnson from '../static/images/team/profile_andreasJohnson.jpg';
 
+const pronouns = {
+    male: 'He/Him/His',
+    female: 'She/Her/Her'
+};
+
 const bios = {
     andreas_j: {
         'name'      :   'Andréas Johnson',
+        'pronouns'  :   'He/Him/His',
+        'contact'   :   {
+            'method':   'email',
+            'at'    :   'andreas.johnson@rams.colostate.edu'
+        },
         'img'       :   profile_andreasJohnson,
         'fav-quote' :   {
             'txt'   :   "I would rather have a mind opened by wonder than one closed by belief.",
@@ -14,18 +24,24 @@ const bios = {
     },
     tor_j: {
         'name'      :   'Tor Johnson',
+        'pronouns'  :   null,
+        'contact'   :   null,
         'img'       :   null,
         'fav-quote' :   null,
         'bio'       :   null
     },
     ullacarin_j: {
         'name'      :   'Ulla-Carin Johnson',
+        'pronouns'  :   null,
+        'contact'   :   null,
         'img'       :   null,
         'fav-quote' :   null,
         'bio'       :   null
     },
     karl_j: {
         'name'      :   'Karl Johnson',
+        'pronouns'  :   null,
+        'contact'   :   null,
         'img'       :   null,
         'fav-quote' :   null,
         'bio'       :   null

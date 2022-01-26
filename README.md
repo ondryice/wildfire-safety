@@ -9,7 +9,8 @@ Our hope is to foster this disaster-preparedness for communities, as communities
 ## The Team
 | Name | Git username | Email |
 | ---- | ------------ | ----- |
-| Andréas J. | `ondryice` or `0ndryice` | ondryice2357@gmail.com |
+| Andréas J. | `ondryice` or `0ndryice` | Andreas.Johnson@rams.colostate.com |
+| Ulla-Carin J. | `ucjohnsongh` | ucjohnson@anicius.com |
 
 # Etiquette
 Developers should follow etiquette when making changes to the website, and the following subsections detail the best practices for doing so.

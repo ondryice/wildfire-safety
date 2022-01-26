@@ -29,9 +29,12 @@ const bios = {
     },
     ullacarin_j: {
         'name'      :   'Ulla-Carin Johnson',
-        'pronouns'  :   null,
-        'role'      :   null,
-        'contact'   :   null,
+        'pronouns'  :   'She/Her/Her,
+        'role'      :   'Product Owner',
+        'contact'   :   {
+            'method':   'email',
+            'at'    :   'uc@anicius.com'
+        },
         'img'       :   null,
         'fav-quote' :   null,
         'bio'       :   null

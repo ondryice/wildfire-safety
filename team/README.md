@@ -1,7 +1,7 @@
 # Team Members
 | Name | Primary Role | GitHub username | Preferred Method of Contact |
 | ---- | ------------ | --------------- | --------------------------- |
-| Ulla-Carin Johnson | Product Owner |  |  |
+| Ulla-Carin Johnson | Product Owner | ucjohnsongh | email: 'uc@anicius.com' |
 | Andréas Johnson | Project Manager | `ondryice` or `0ndryice` | email: `andreas.johnson@rams.colostate.edu` |
 | Tor Johnson | Developer | `11tajusername` |  |
 | Karl Johnson | Executive Consultant |  |  |

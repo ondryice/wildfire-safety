@@ -6,17 +6,19 @@ export class NavbarButton extends React.Component {
         super(props);
 
         this.state = {
-            selected: this.props.selected || false,
+            selected: this.props.selected,
             onSelect: this.props.onSelect || null,
             theme: this.props.theme || 'navbar-btn'
         };
 
         this.buttonText = this.props.children || '?';
+
+        this.onClick = this.onClick.bind(this);
     }
 
     render() {
         return (
-            <Button>
+            <Button className={this.getClassName()} onClick={this.onClick}>
                 {this.buttonText}
             </Button>
         );

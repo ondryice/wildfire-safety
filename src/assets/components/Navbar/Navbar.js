@@ -36,6 +36,7 @@ export class Navbar extends React.Component {
                 let props = {};
                 props.selected = this.state.currentPage === section.name;
                 if(index === 0) props.theme = 'NavbarButton-logo';
+                props.onSelect = () => { this.selectPage(section.name) };
                 return (
                     <NavbarButton key={'NavbarButton no. '+index} {...props}>
                         {section.text}
@@ -43,5 +44,9 @@ export class Navbar extends React.Component {
                 );
             }
         )
+    }
+
+    selectPage(pageName) {
+        this.setState({ currentPage:pageName });
     }
 }

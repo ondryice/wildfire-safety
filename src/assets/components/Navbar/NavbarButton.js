@@ -14,11 +14,17 @@ export class NavbarButton extends React.Component {
         this.buttonText = this.props.children || '?';
 
         this.onClick = this.onClick.bind(this);
+
+        this.styleProp = {
+            width: '100%',
+            cursor: 'default',
+            height: 'auto'
+        };
     }
 
     render() {
         return (
-            <Button className={this.getClassName()} onClick={this.onClick}>
+            <Button className={this.getClassName()} onClick={this.onClick} style={this.styleProp}>
                 {this.buttonText}
             </Button>
         );

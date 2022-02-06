@@ -1,5 +1,6 @@
 import React from 'react';
 import { notFoundError } from '../utils/Errors';
+import { HomePage } from './HomePage/HomePage';
 import { Navbar } from './margins/Navbar';
 
 export class Page extends React.Component {
@@ -11,7 +12,7 @@ export class Page extends React.Component {
         };
 
         this.pageContents = {
-            // 'Home Page'             :   <p>TODO: Home page</p>,
+            'Home Page'             :   <HomePage />,
             'Not Yet Implemented'   :   notFoundError({})
         };
 

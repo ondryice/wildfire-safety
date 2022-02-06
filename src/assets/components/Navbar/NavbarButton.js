@@ -8,7 +8,7 @@ export class NavbarButton extends React.Component {
         this.state = {
             selected: this.props.selected || false,
             onSelect: this.props.onSelect || null,
-            theme: this.props.theme || 'link-btn'
+            theme: this.props.theme || 'navbar-btn'
         };
 
         this.buttonText = this.props.children || '?';
@@ -16,11 +16,9 @@ export class NavbarButton extends React.Component {
 
     render() {
         return (
-            <div className='NavbarButton-container'>
-                <Button>
-                    {this.buttonText}
-                </Button>
-            </div>
+            <Button>
+                {this.buttonText}
+            </Button>
         );
     }
 

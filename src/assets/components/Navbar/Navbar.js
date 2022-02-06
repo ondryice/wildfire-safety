@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavbarButton } from './NavbarButton';
 
 export class Navbar extends React.Component {
     constructor(props) {
@@ -10,9 +11,12 @@ export class Navbar extends React.Component {
 
         this.sections = [
             {   name:'home-page',
-                content: 'Home',
-                classes: 'navbar-btn-home',
-                onClick: null
+                text: 'Home',
+                content: null
+            },
+            {   name:'about-page',
+                text:'About',
+                content: null
             }
         ];
     }
@@ -29,14 +33,13 @@ export class Navbar extends React.Component {
     renderButtons() {
         return this.sections.map(
             (section, index) => {
+                let props = {};
+                props.selected = this.state.currentPage === section.name;
+                if(index === 0) props.theme = 'NavbarButton-logo';
                 return (
-                    <div
-                        key={'nb-'+index}
-                        className={section.classes}
-                        onClick={section.onClick}
-                    >
-                        <p>{section.content}</p>
-                    </div>
+                    <NavbarButton key={'NavbarButton no. '+index} {...props}>
+                        {section.text}
+                    </NavbarButton>
                 );
             }
         )

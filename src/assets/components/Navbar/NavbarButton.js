@@ -18,4 +18,15 @@ export class NavbarButton extends React.Component {
             </div>
         );
     }
+
+    getClassName() {
+        let classes = this.state.theme;
+        if(this.state.selected) classes += ' NavbarButton-selected';
+        return classes;
+    }
+
+    onClick() {
+        if(this.props.onSelect != null && this.props.onSelect != undefined) this.props.onSelect();
+        else this.setState({ selected: true });
+    }
 }

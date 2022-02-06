@@ -1,7 +1,7 @@
 import React from 'react';
 import { notFoundError } from '../utils/Errors';
 import { HomePage } from './HomePage/HomePage';
-import { Navbar } from './margins/Navbar';
+import { Navbar } from './Navbar/Navbar';
 
 export class Page extends React.Component {
     constructor(props) {

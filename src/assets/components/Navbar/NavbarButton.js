@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'reactstrap';
 
 export class NavbarButton extends React.Component {
     constructor(props) {
@@ -9,12 +10,16 @@ export class NavbarButton extends React.Component {
             onSelect: this.props.onSelect || null,
             theme: this.props.theme || 'link-btn'
         };
+
+        this.buttonText = this.props.children || '?';
     }
 
     render() {
         return (
             <div className='NavbarButton-container'>
-                <p>TODO: NAVBAR_BUTTON</p>
+                <Button>
+                    {this.buttonText}
+                </Button>
             </div>
         );
     }

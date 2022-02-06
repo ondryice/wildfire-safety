@@ -1,5 +1,6 @@
 import React from 'react';
-import { Col, Row } from 'reactstrap';
+import { Col, Container, Row } from 'reactstrap';
+import { SECTIONS } from '../../static/design/navbarSections';
 import { NavbarButton } from './NavbarButton';
 
 export class Navbar extends React.Component {
@@ -9,44 +10,26 @@ export class Navbar extends React.Component {
         this.state = {
             currentPage: this.props.currentPage
         };
-
-        this.sections = [
-            {   name:'logo',
-                text:'Logo'
-            },
-            {   name:'home-page',
-                text: 'Home'
-            },
-            {   name:'about-page',
-                text:'About'
-            }
-        ];
     }
 
     render() {
         return (
-            <Row> <Col sm={12} md={{size:10, offset:1}}> <Row>
+            <Container fluid> <Row>
                 {this.renderButtons()}
-            </Row> </Col> </Row>
+            </Row> </Container>
         );
     }
 
     renderButtons() {
-        return this.sections.map(
+        return SECTIONS.map(
             (section, index) => {
-                let props = {};
-                props.selected = this.state.currentPage === section.name;
-                if(index === 0) props.theme = 'NavbarButton-logo';
-                props.onSelect = () => { this.selectPage(section.name) };
-                let colStyle =
-                    index === 0 ? { paddingRight:0 } :
-                    index === this.sections.length - 1 ? { paddingLeft:0 } :
-                    { padding:0 }
-                ;
-                colStyle.display = 'inlineFlex';
+                let colProps = this.getColProps(index);
+                let btnProps = this.getBtnProps(section.name);
+                if(index === 0) btnProps.theme = 'NavbarButton-logo';
+
                 return (
-                    <Col key={'NavbarButton no. '+index} style={colStyle}>
-                        <NavbarButton {...props}>
+                    <Col {...colProps}>
+                        <NavbarButton {...btnProps}>
                             {section.text}
                         </NavbarButton>
                     </Col>
@@ -57,5 +40,22 @@ export class Navbar extends React.Component {
 
     selectPage(pageName) {
         this.setState({ currentPage:pageName });
+    }
+
+    getColProps(index) {
+        return {
+            key: 'NavbarButton-no-'+index,
+            style:
+                index === 0 ? { paddingRight:0 } :
+                index === SECTIONS.length - 1 ? { paddingLeft:0 } :
+                { padding:0 }
+        };
+    }
+
+    getBtnProps(name) {
+        return {
+            selected: this.state.currentPage === name,
+            onSelect: ()=> this.selectPage(name)
+        };
     }
 }

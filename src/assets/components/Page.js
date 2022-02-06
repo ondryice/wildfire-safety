@@ -1,5 +1,6 @@
 import React from 'react';
 import { notFoundError } from '../utils/Errors';
+import { Navbar } from './margins/Navbar';
 
 export class Page extends React.Component {
     constructor(props) {
@@ -20,6 +21,7 @@ export class Page extends React.Component {
     render() {
         return (
             <div className='Page'>
+                <Navbar currentPage={this.state.content} />
                 {this.getContent()}
             </div>
         );

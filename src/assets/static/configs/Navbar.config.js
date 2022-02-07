@@ -28,6 +28,5 @@ export function getSection(name) {
 //   and `props` contains *all* necessary props to be passed to the content
 // if `name` is invalid, ie not present within `SECTIONS`, returns `undefined`
 export function renderContent(name, props) {
-    let sect = getSection(name);
     return getSection(name)?.getContent(props || {}) || undefined;
 }

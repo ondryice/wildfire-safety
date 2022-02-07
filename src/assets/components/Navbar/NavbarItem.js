@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class NavbarButton extends React.Component {
+export class NavbarItem extends React.Component {
     constructor(props) {
         super(props);
 
@@ -11,13 +11,6 @@ export class NavbarButton extends React.Component {
 
         this.buttonText = this.props.children || '?';
         this.onClick = this.onClick.bind(this);
-    }
-
-    componentWillReceiveProps(props) {
-        this.setState({
-            onSelect: props.onSelect || null,
-            theme: props.theme || 'NavbarButton'
-        });
     }
 
     render() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'reactstrap';
-import { SECTIONS } from '../../static/design/navbarSections';
-import { NavbarButton } from './NavbarButton';
+import { SECTIONS } from '../../static/configs/Navbar.config';
+import { NavbarItem } from './NavbarItem';
 
 export class Navbar extends React.Component {
     constructor(props) {
@@ -26,13 +26,16 @@ export class Navbar extends React.Component {
                 let colProps = this.getColProps(index);
                 let btnProps = { onSelect: ()=> this.selectPage(section.name) };
                 if(index === 0) btnProps = { theme: 'NavbarLogo' };
-                else if(this.state.currentPage === section.name) btnProps.theme = 'Navbar-selected'
+                else if(this.state.currentPage === section.name) {
+                    colProps.key += '-selected';
+                    btnProps.theme = 'Navbar-selected'
+                }
 
                 return (
                     <Col {...colProps}>
-                        <NavbarButton {...btnProps}>
+                        <NavbarItem {...btnProps}>
                             {section.text}
-                        </NavbarButton>
+                        </NavbarItem>
                     </Col>
                 );
             }
@@ -45,7 +48,7 @@ export class Navbar extends React.Component {
 
     getColProps(index) {
         return {
-            key: 'NavbarButton-no-'+index,
+            key: 'NavbarItem-no-'+index,
             style:
                 index === 0 ? { paddingRight:0 } :
                 index === SECTIONS.length - 1 ? { paddingLeft:0 } :

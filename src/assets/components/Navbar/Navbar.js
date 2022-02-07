@@ -21,12 +21,12 @@ export class Navbar extends React.Component {
     }
 
     renderButtons() {
-        console.log(JSON.stringify(this.state))
         return SECTIONS.map(
             (section, index) => {
                 let colProps = this.getColProps(index);
-                let btnProps = this.getBtnProps(section.name);
-                if(index === 0) btnProps.theme = 'NavbarLogo';
+                let btnProps = { onSelect: ()=> this.selectPage(section.name) };
+                if(index === 0) btnProps = { theme: 'NavbarLogo' };
+                else if(this.state.currentPage === section.name) btnProps.theme = 'Navbar-selected'
 
                 return (
                     <Col {...colProps}>
@@ -50,13 +50,6 @@ export class Navbar extends React.Component {
                 index === 0 ? { paddingRight:0 } :
                 index === SECTIONS.length - 1 ? { paddingLeft:0 } :
                 { padding:0 }
-        };
-    }
-
-    getBtnProps(name) {
-        return {
-            selected: this.state.currentPage === name,
-            onSelect: ()=> this.selectPage(name)
         };
     }
 }

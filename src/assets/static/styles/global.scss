@@ -45,6 +45,16 @@ $theme-colors: (
 @import '../../../../node_modules/bootstrap/scss/bootstrap';
 // @import './navbar.scss';
 
+.Navbar {
+    padding: 0.75rem;
+    background-color: $dk-blue;
+    border-radius: 0 0 10px 10px;
+}
+
+.NavbarLogo {
+    background-color: $off-white;
+}
+
 .NavbarItem {
     background-color: white;
     cursor: default;
@@ -56,10 +66,6 @@ $theme-colors: (
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-.NavbarLogo {
-    background-color: $off-white;
 }
 
 .NavbarButton {

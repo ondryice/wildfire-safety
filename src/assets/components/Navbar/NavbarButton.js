@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'reactstrap';
 
 export class NavbarButton extends React.Component {
     constructor(props) {
@@ -8,36 +7,34 @@ export class NavbarButton extends React.Component {
         this.state = {
             selected: this.props.selected,
             onSelect: this.props.onSelect || null,
-            theme: this.props.theme || 'navbar-btn'
+            theme: this.props.theme || 'NavbarButton'
         };
 
         this.buttonText = this.props.children || '?';
 
         this.onClick = this.onClick.bind(this);
-
-        this.styleProp = {
-            width: '100%',
-            cursor: 'default',
-            height: 'auto'
-        };
     }
 
     render() {
         return (
-            <Button className={this.getClassName()} onClick={this.onClick} style={this.styleProp}>
+            <div className={this.getClassName()} onClick={this.onClick}>
                 {this.buttonText}
-            </Button>
+            </div>
         );
     }
 
     getClassName() {
-        let classes = this.state.theme;
-        if(this.state.selected) classes += ' NavbarButton-selected';
+        let classes = 'NavbarItem';
+        if(this.state.selected) classes += ' Navbar-selected';
+        else classes += ' ' + this.state.theme;
         return classes;
     }
 
     onClick() {
-        if(this.props.onSelect != null && this.props.onSelect != undefined) this.props.onSelect();
+        if(this.props.onSelect != null && this.props.onSelect != undefined) {
+            console.log('onselect func provided')
+            this.props.onSelect();
+        }
         else this.setState({ selected: true });
     }
 }

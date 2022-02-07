@@ -21,11 +21,12 @@ export class Navbar extends React.Component {
     }
 
     renderButtons() {
+        console.log(JSON.stringify(this.state))
         return SECTIONS.map(
             (section, index) => {
                 let colProps = this.getColProps(index);
                 let btnProps = this.getBtnProps(section.name);
-                if(index === 0) btnProps.theme = 'NavbarButton-logo';
+                if(index === 0) btnProps.theme = 'NavbarLogo';
 
                 return (
                     <Col {...colProps}>

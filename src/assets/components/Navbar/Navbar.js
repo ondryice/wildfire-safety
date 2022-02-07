@@ -27,7 +27,7 @@ export class Navbar extends React.Component {
                 let btnProps = { onSelect: ()=> this.selectPage(section.name) };
                 if(index === 0) btnProps = { theme: 'NavbarLogo' };
                 else if(this.state.currentPage === section.name) {
-                    colProps.key += '-selected';
+                    colProps.key += '-selected'; // need key-change to indicate a new component is needed
                     btnProps.theme = 'Navbar-selected'
                 }
 
@@ -43,6 +43,7 @@ export class Navbar extends React.Component {
     }
 
     selectPage(pageName) {
+        this.props.selectPage(pageName);
         this.setState({ currentPage:pageName });
     }
 

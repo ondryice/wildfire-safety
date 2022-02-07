@@ -14,7 +14,7 @@ export class Navbar extends React.Component {
 
     render() {
         return (
-            <Container fluid> <Row>
+            <Container fluid className='Navbar'> <Row>
                 {this.renderButtons()}
             </Row> </Container>
         );

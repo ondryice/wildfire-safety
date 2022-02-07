@@ -8,7 +8,7 @@ export class Page extends React.Component {
         super(props);
 
         this.state = {
-            content: 'Home Page'
+            content: 'home'
         };
 
         this.pageContents = {
